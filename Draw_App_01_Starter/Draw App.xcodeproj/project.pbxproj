@@ -70,8 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				C3C4036729FD624400ABED2D /* Extensions */,
-				C3C4034529FD18FA00ABED2D /* AppDelegate.swift */,
-				C3C4034729FD18FA00ABED2D /* SceneDelegate.swift */,
 				C3C4034929FD18FA00ABED2D /* ViewController.swift */,
 				C3FF7D442A2E7678005F8ACB /* Drawing */,
 				C3C4036229FD602A00ABED2D /* Supporting Files */,
@@ -82,6 +80,8 @@
 		C3C4036229FD602A00ABED2D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3C4034529FD18FA00ABED2D /* AppDelegate.swift */,
+				C3C4034729FD18FA00ABED2D /* SceneDelegate.swift */,
 				C3C4036029FD2DA000ABED2D /* DrawingApp-BridgingHeader.h */,
 				C3C4034E29FD18FB00ABED2D /* Assets.xcassets */,
 				C3C4035029FD18FB00ABED2D /* LaunchScreen.storyboard */,

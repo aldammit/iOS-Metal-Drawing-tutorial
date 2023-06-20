@@ -31,11 +31,13 @@ class Renderer: NSObject, MTKViewDelegate {
 
         createRenderPipelineState()
         
+        // Set MTKView background color to white
         metalKitView.clearColor = MTLClearColor(red: 1, green: 1, blue: 1, alpha: 1.0)
         
         // Create the command queue
         commandQueue = device.makeCommandQueue()
         
+        // Set MTKViewDelegate
         metalKitView.delegate = self
     }
 

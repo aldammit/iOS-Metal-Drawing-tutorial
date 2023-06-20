@@ -31,4 +31,4 @@ fragment half4 pointShaderFragment(PointVertex point_data [[ stage_in ]],
     float4 out_color = point_data.color;
     out_color.a = 1.0 - smoothstep(0.4, 0.5, dist);
     return half4(out_color);
-}
+};
