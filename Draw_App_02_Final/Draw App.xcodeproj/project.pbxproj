@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C311F2DC2A41679400B68588 /* MTLTexture + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C311F2DB2A41679400B68588 /* MTLTexture + Helpers.swift */; };
+		C358DC5B2A0CE71F00A1C3DB /* DrawingGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C358DC5A2A0CE71F00A1C3DB /* DrawingGestureRecognizer.swift */; };
+		C3981A082A073DD4003BFECD /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = C3981A072A073DD4003BFECD /* Shader.metal */; };
+		C3981A0A2A076F6A003BFECD /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3981A092A076F6A003BFECD /* Point.swift */; };
+		C3C4034629FD18FA00ABED2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4034529FD18FA00ABED2D /* AppDelegate.swift */; };
+		C3C4034829FD18FA00ABED2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4034729FD18FA00ABED2D /* SceneDelegate.swift */; };
+		C3C4034A29FD18FA00ABED2D /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4034929FD18FA00ABED2D /* DrawingViewController.swift */; };
+		C3C4034F29FD18FB00ABED2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3C4034E29FD18FB00ABED2D /* Assets.xcassets */; };
+		C3C4035229FD18FB00ABED2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3C4035029FD18FB00ABED2D /* LaunchScreen.storyboard */; };
+		C3C4035A29FD268900ABED2D /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4035929FD268900ABED2D /* DrawingView.swift */; };
+		C3C4035C29FD280900ABED2D /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4035B29FD280900ABED2D /* Renderer.swift */; };
+		C3C4036929FD627200ABED2D /* Number+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4036829FD627200ABED2D /* Number+Helpers.swift */; };
+		C3C4037129FD701A00ABED2D /* CGSize + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4036E29FD701A00ABED2D /* CGSize + Helpers.swift */; };
+		C3C4037229FD701A00ABED2D /* CGPoint + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4036F29FD701A00ABED2D /* CGPoint + Helpers.swift */; };
+		C3C4037329FD701A00ABED2D /* CGRect + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4037029FD701A00ABED2D /* CGRect + Helpers.swift */; };
+		C3C4037529FD8F6C00ABED2D /* UIColor + Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C4037429FD8F6C00ABED2D /* UIColor + Utils.swift */; };
+		C3FF7D5C2A2F369A005F8ACB /* EditorBottomSizeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D4A2A2F369A005F8ACB /* EditorBottomSizeEditor.swift */; };
+		C3FF7D5D2A2F369A005F8ACB /* SizeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D4B2A2F369A005F8ACB /* SizeSlider.swift */; };
+		C3FF7D5E2A2F369A005F8ACB /* EditorBottomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D4C2A2F369A005F8ACB /* EditorBottomViewModel.swift */; };
+		C3FF7D5F2A2F369A005F8ACB /* ColorPaletteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D4E2A2F369A005F8ACB /* ColorPaletteCollectionViewCell.swift */; };
+		C3FF7D602A2F369A005F8ACB /* ColorPickerSliderInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D4F2A2F369A005F8ACB /* ColorPickerSliderInputView.swift */; };
+		C3FF7D622A2F369A005F8ACB /* ColorPickerBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D512A2F369A005F8ACB /* ColorPickerBottomSheetView.swift */; };
+		C3FF7D632A2F369A005F8ACB /* ColorPickerGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D522A2F369A005F8ACB /* ColorPickerGridView.swift */; };
+		C3FF7D642A2F369A005F8ACB /* ColorPickerSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D532A2F369A005F8ACB /* ColorPickerSlider.swift */; };
+		C3FF7D652A2F369A005F8ACB /* ColorPickerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D542A2F369A005F8ACB /* ColorPickerPresentationController.swift */; };
+		C3FF7D662A2F369A005F8ACB /* CollorPickerBottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D552A2F369A005F8ACB /* CollorPickerBottomSheetController.swift */; };
+		C3FF7D672A2F369A005F8ACB /* ColorPickerSpectrumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D562A2F369A005F8ACB /* ColorPickerSpectrumView.swift */; };
+		C3FF7D682A2F369A005F8ACB /* EditorBottomSegementedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D572A2F369A005F8ACB /* EditorBottomSegementedControl.swift */; };
+		C3FF7D6B2A2F369A005F8ACB /* EditorBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D5B2A2F369A005F8ACB /* EditorBottomView.swift */; };
+		C3FF7D752A2F372C005F8ACB /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D712A2F372C005F8ACB /* Color.swift */; };
+		C3FF7D762A2F372C005F8ACB /* Brush.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D722A2F372C005F8ACB /* Brush.swift */; };
+		C3FF7D792A2F399F005F8ACB /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D772A2F399F005F8ACB /* UIView+Constraints.swift */; };
+		C3FF7D7A2A2F399F005F8ACB /* UIImage + Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D782A2F399F005F8ACB /* UIImage + Resources.swift */; };
+		C3FF7D7C2A2F3A32005F8ACB /* UIView + Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D7B2A2F3A32005F8ACB /* UIView + Helpers.swift */; };
+		C3FF7D7E2A2F3A7B005F8ACB /* UIControl + Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D7D2A2F3A7B005F8ACB /* UIControl + Combine.swift */; };
+		C3FF7D822A2F3B94005F8ACB /* CGImage + PixelColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D812A2F3B94005F8ACB /* CGImage + PixelColor.swift */; };
+		C3FF7D842A2F49E9005F8ACB /* UIApplication + currentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3FF7D832A2F49E9005F8ACB /* UIApplication + currentWindow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C311F2DB2A41679400B68588 /* MTLTexture + Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MTLTexture + Helpers.swift"; sourceTree = "<group>"; };
+		C358DC5A2A0CE71F00A1C3DB /* DrawingGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingGestureRecognizer.swift; sourceTree = "<group>"; };
+		C3981A072A073DD4003BFECD /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		C3981A092A076F6A003BFECD /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		C3C4034229FD18FA00ABED2D /* Draw App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Draw App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3C4034529FD18FA00ABED2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3C4034729FD18FA00ABED2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C3C4034929FD18FA00ABED2D /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		C3C4034E29FD18FB00ABED2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3C4035129FD18FB00ABED2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3C4035329FD18FB00ABED2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C4035929FD268900ABED2D /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		C3C4035B29FD280900ABED2D /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		C3C4036029FD2DA000ABED2D /* DrawingApp-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DrawingApp-BridgingHeader.h"; sourceTree = "<group>"; };
+		C3C4036829FD627200ABED2D /* Number+Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+Helpers.swift"; sourceTree = "<group>"; };
+		C3C4036E29FD701A00ABED2D /* CGSize + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize + Helpers.swift"; sourceTree = "<group>"; };
+		C3C4036F29FD701A00ABED2D /* CGPoint + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint + Helpers.swift"; sourceTree = "<group>"; };
+		C3C4037029FD701A00ABED2D /* CGRect + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect + Helpers.swift"; sourceTree = "<group>"; };
+		C3C4037429FD8F6C00ABED2D /* UIColor + Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Utils.swift"; sourceTree = "<group>"; };
+		C3FF7D4A2A2F369A005F8ACB /* EditorBottomSizeEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorBottomSizeEditor.swift; sourceTree = "<group>"; };
+		C3FF7D4B2A2F369A005F8ACB /* SizeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SizeSlider.swift; sourceTree = "<group>"; };
+		C3FF7D4C2A2F369A005F8ACB /* EditorBottomViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorBottomViewModel.swift; sourceTree = "<group>"; };
+		C3FF7D4E2A2F369A005F8ACB /* ColorPaletteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPaletteCollectionViewCell.swift; sourceTree = "<group>"; };
+		C3FF7D4F2A2F369A005F8ACB /* ColorPickerSliderInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerSliderInputView.swift; sourceTree = "<group>"; };
+		C3FF7D512A2F369A005F8ACB /* ColorPickerBottomSheetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerBottomSheetView.swift; sourceTree = "<group>"; };
+		C3FF7D522A2F369A005F8ACB /* ColorPickerGridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerGridView.swift; sourceTree = "<group>"; };
+		C3FF7D532A2F369A005F8ACB /* ColorPickerSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerSlider.swift; sourceTree = "<group>"; };
+		C3FF7D542A2F369A005F8ACB /* ColorPickerPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerPresentationController.swift; sourceTree = "<group>"; };
+		C3FF7D552A2F369A005F8ACB /* CollorPickerBottomSheetController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollorPickerBottomSheetController.swift; sourceTree = "<group>"; };
+		C3FF7D562A2F369A005F8ACB /* ColorPickerSpectrumView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerSpectrumView.swift; sourceTree = "<group>"; };
+		C3FF7D572A2F369A005F8ACB /* EditorBottomSegementedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorBottomSegementedControl.swift; sourceTree = "<group>"; };
+		C3FF7D5B2A2F369A005F8ACB /* EditorBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditorBottomView.swift; sourceTree = "<group>"; };
+		C3FF7D712A2F372C005F8ACB /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C3FF7D722A2F372C005F8ACB /* Brush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brush.swift; sourceTree = "<group>"; };
+		C3FF7D772A2F399F005F8ACB /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		C3FF7D782A2F399F005F8ACB /* UIImage + Resources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage + Resources.swift"; sourceTree = "<group>"; };
+		C3FF7D7B2A2F3A32005F8ACB /* UIView + Helpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Helpers.swift"; sourceTree = "<group>"; };
+		C3FF7D7D2A2F3A7B005F8ACB /* UIControl + Combine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIControl + Combine.swift"; sourceTree = "<group>"; };
+		C3FF7D812A2F3B94005F8ACB /* CGImage + PixelColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage + PixelColor.swift"; sourceTree = "<group>"; };
+		C3FF7D832A2F49E9005F8ACB /* UIApplication + currentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication + currentWindow.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3C4033F29FD18FA00ABED2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3C4033929FD18FA00ABED2D = {
+			isa = PBXGroup;
+			children = (
+				C3C4034429FD18FA00ABED2D /* Draw App */,
+				C3C4034329FD18FA00ABED2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3C4034329FD18FA00ABED2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4034229FD18FA00ABED2D /* Draw App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3C4034429FD18FA00ABED2D /* Draw App */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4036729FD624400ABED2D /* Extensions */,
+				C3FF7D6E2A2F372C005F8ACB /* Models */,
+				C3FF7D492A2F369A005F8ACB /* BottomView */,
+				C3C4034529FD18FA00ABED2D /* AppDelegate.swift */,
+				C3C4034729FD18FA00ABED2D /* SceneDelegate.swift */,
+				C3C4034929FD18FA00ABED2D /* DrawingViewController.swift */,
+				C3C4036129FD601A00ABED2D /* Metal */,
+				C3C4036229FD602A00ABED2D /* Supporting Files */,
+			);
+			path = "Draw App";
+			sourceTree = "<group>";
+		};
+		C3C4036129FD601A00ABED2D /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4035929FD268900ABED2D /* DrawingView.swift */,
+				C358DC5A2A0CE71F00A1C3DB /* DrawingGestureRecognizer.swift */,
+				C3C4035B29FD280900ABED2D /* Renderer.swift */,
+				C3981A072A073DD4003BFECD /* Shader.metal */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+		C3C4036229FD602A00ABED2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3C4036029FD2DA000ABED2D /* DrawingApp-BridgingHeader.h */,
+				C3C4034E29FD18FB00ABED2D /* Assets.xcassets */,
+				C3C4035029FD18FB00ABED2D /* LaunchScreen.storyboard */,
+				C3C4035329FD18FB00ABED2D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3C4036729FD624400ABED2D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF7D782A2F399F005F8ACB /* UIImage + Resources.swift */,
+				C3FF7D772A2F399F005F8ACB /* UIView+Constraints.swift */,
+				C3FF7D7B2A2F3A32005F8ACB /* UIView + Helpers.swift */,
+				C3C4036829FD627200ABED2D /* Number+Helpers.swift */,
+				C311F2DB2A41679400B68588 /* MTLTexture + Helpers.swift */,
+				C3C4036F29FD701A00ABED2D /* CGPoint + Helpers.swift */,
+				C3C4037029FD701A00ABED2D /* CGRect + Helpers.swift */,
+				C3C4036E29FD701A00ABED2D /* CGSize + Helpers.swift */,
+				C3C4037429FD8F6C00ABED2D /* UIColor + Utils.swift */,
+				C3FF7D812A2F3B94005F8ACB /* CGImage + PixelColor.swift */,
+				C3FF7D7D2A2F3A7B005F8ACB /* UIControl + Combine.swift */,
+				C3FF7D832A2F49E9005F8ACB /* UIApplication + currentWindow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C3FF7D492A2F369A005F8ACB /* BottomView */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF7D4C2A2F369A005F8ACB /* EditorBottomViewModel.swift */,
+				C3FF7D4A2A2F369A005F8ACB /* EditorBottomSizeEditor.swift */,
+				C3FF7D4B2A2F369A005F8ACB /* SizeSlider.swift */,
+				C3FF7D572A2F369A005F8ACB /* EditorBottomSegementedControl.swift */,
+				C3FF7D5B2A2F369A005F8ACB /* EditorBottomView.swift */,
+				C3FF7D4D2A2F369A005F8ACB /* Color Picker */,
+			);
+			path = BottomView;
+			sourceTree = "<group>";
+		};
+		C3FF7D4D2A2F369A005F8ACB /* Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF7D542A2F369A005F8ACB /* ColorPickerPresentationController.swift */,
+				C3FF7D552A2F369A005F8ACB /* CollorPickerBottomSheetController.swift */,
+				C3FF7D512A2F369A005F8ACB /* ColorPickerBottomSheetView.swift */,
+				C3FF7D4F2A2F369A005F8ACB /* ColorPickerSliderInputView.swift */,
+				C3FF7D4E2A2F369A005F8ACB /* ColorPaletteCollectionViewCell.swift */,
+				C3FF7D532A2F369A005F8ACB /* ColorPickerSlider.swift */,
+				C3FF7D522A2F369A005F8ACB /* ColorPickerGridView.swift */,
+				C3FF7D562A2F369A005F8ACB /* ColorPickerSpectrumView.swift */,
+			);
+			path = "Color Picker";
+			sourceTree = "<group>";
+		};
+		C3FF7D6E2A2F372C005F8ACB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3FF7D712A2F372C005F8ACB /* Color.swift */,
+				C3FF7D722A2F372C005F8ACB /* Brush.swift */,
+				C3981A092A076F6A003BFECD /* Point.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3C4034129FD18FA00ABED2D /* Draw App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C4035629FD18FB00ABED2D /* Build configuration list for PBXNativeTarget "Draw App" */;
+			buildPhases = (
+				C3C4033E29FD18FA00ABED2D /* Sources */,
+				C3C4033F29FD18FA00ABED2D /* Frameworks */,
+				C3C4034029FD18FA00ABED2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Draw App";
+			productName = "Draw App";
+			productReference = C3C4034229FD18FA00ABED2D /* Draw App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3C4033A29FD18FA00ABED2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C3C4034129FD18FA00ABED2D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C3C4033D29FD18FA00ABED2D /* Build configuration list for PBXProject "Draw App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3C4033929FD18FA00ABED2D;
+			productRefGroup = C3C4034329FD18FA00ABED2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3C4034129FD18FA00ABED2D /* Draw App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3C4034029FD18FA00ABED2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C4035229FD18FB00ABED2D /* LaunchScreen.storyboard in Resources */,
+				C3C4034F29FD18FB00ABED2D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3C4033E29FD18FA00ABED2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3FF7D672A2F369A005F8ACB /* ColorPickerSpectrumView.swift in Sources */,
+				C3FF7D632A2F369A005F8ACB /* ColorPickerGridView.swift in Sources */,
+				C3FF7D752A2F372C005F8ACB /* Color.swift in Sources */,
+				C3FF7D5F2A2F369A005F8ACB /* ColorPaletteCollectionViewCell.swift in Sources */,
+				C3FF7D842A2F49E9005F8ACB /* UIApplication + currentWindow.swift in Sources */,
+				C3FF7D642A2F369A005F8ACB /* ColorPickerSlider.swift in Sources */,
+				C3C4037329FD701A00ABED2D /* CGRect + Helpers.swift in Sources */,
+				C3FF7D6B2A2F369A005F8ACB /* EditorBottomView.swift in Sources */,
+				C3FF7D7C2A2F3A32005F8ACB /* UIView + Helpers.swift in Sources */,
+				C3C4034A29FD18FA00ABED2D /* DrawingViewController.swift in Sources */,
+				C3FF7D662A2F369A005F8ACB /* CollorPickerBottomSheetController.swift in Sources */,
+				C3FF7D652A2F369A005F8ACB /* ColorPickerPresentationController.swift in Sources */,
+				C3C4034629FD18FA00ABED2D /* AppDelegate.swift in Sources */,
+				C3C4037529FD8F6C00ABED2D /* UIColor + Utils.swift in Sources */,
+				C3C4037229FD701A00ABED2D /* CGPoint + Helpers.swift in Sources */,
+				C3FF7D762A2F372C005F8ACB /* Brush.swift in Sources */,
+				C3FF7D792A2F399F005F8ACB /* UIView+Constraints.swift in Sources */,
+				C3FF7D602A2F369A005F8ACB /* ColorPickerSliderInputView.swift in Sources */,
+				C3FF7D822A2F3B94005F8ACB /* CGImage + PixelColor.swift in Sources */,
+				C3C4034829FD18FA00ABED2D /* SceneDelegate.swift in Sources */,
+				C3C4037129FD701A00ABED2D /* CGSize + Helpers.swift in Sources */,
+				C3C4035C29FD280900ABED2D /* Renderer.swift in Sources */,
+				C3981A0A2A076F6A003BFECD /* Point.swift in Sources */,
+				C3FF7D5C2A2F369A005F8ACB /* EditorBottomSizeEditor.swift in Sources */,
+				C311F2DC2A41679400B68588 /* MTLTexture + Helpers.swift in Sources */,
+				C3FF7D5D2A2F369A005F8ACB /* SizeSlider.swift in Sources */,
+				C3FF7D622A2F369A005F8ACB /* ColorPickerBottomSheetView.swift in Sources */,
+				C3FF7D7A2A2F399F005F8ACB /* UIImage + Resources.swift in Sources */,
+				C358DC5B2A0CE71F00A1C3DB /* DrawingGestureRecognizer.swift in Sources */,
+				C3FF7D7E2A2F3A7B005F8ACB /* UIControl + Combine.swift in Sources */,
+				C3C4036929FD627200ABED2D /* Number+Helpers.swift in Sources */,
+				C3981A082A073DD4003BFECD /* Shader.metal in Sources */,
+				C3FF7D5E2A2F369A005F8ACB /* EditorBottomViewModel.swift in Sources */,
+				C3FF7D682A2F369A005F8ACB /* EditorBottomSegementedControl.swift in Sources */,
+				C3C4035A29FD268900ABED2D /* DrawingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C3C4035029FD18FB00ABED2D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3C4035129FD18FB00ABED2D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3C4035429FD18FB00ABED2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C3C4035529FD18FB00ABED2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3C4035729FD18FB00ABED2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JTVJ6L7R86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Draw App/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.fancy-tech.draw-app.Draw-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Draw App/Supporting Files/DrawingApp-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3C4035829FD18FB00ABED2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JTVJ6L7R86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Draw App/Supporting Files/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.fancy-tech.draw-app.Draw-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Draw App/Supporting Files/DrawingApp-BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3C4033D29FD18FA00ABED2D /* Build configuration list for PBXProject "Draw App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C4035429FD18FB00ABED2D /* Debug */,
+				C3C4035529FD18FB00ABED2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3C4035629FD18FB00ABED2D /* Build configuration list for PBXNativeTarget "Draw App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3C4035729FD18FB00ABED2D /* Debug */,
+				C3C4035829FD18FB00ABED2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3C4033A29FD18FA00ABED2D /* Project object */;
+}
